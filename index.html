@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="font-family: 'Poppins';">
+<html lang="en" class="scroll-smooth" style="font-family: 'Poppins';">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +8,71 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quattrocento:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Heroicons CDN -->
-<script src="https://unpkg.com/heroicons@2.0.18/dist/heroicons.min.js"></script>
+    <script src="https://unpkg.com/heroicons@2.0.18/dist/heroicons.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Jadrien Roi | Portfolio</title>
 </head>
 <body class="box-border">
-    <nav class="bg-[#000000CC] fixed top-4 left-1/2 -translate-x-1/2 flex items-center justify-between gap-4 p-2 px-6 rounded-[3rem] z-[1000] w-[90%] max-w-[800px]">
+    <nav class="bg-[#000000CC] fixed top-4 left-1/2 -translate-x-1/2 flex items-center justify-between gap-4 p-2 px-6 rounded-[3rem] z-[1000] w-[90%] max-w-[910px]">
         <div class="whitespace-nowrap">
             <h1 class="text-xl md:text-2xl font-bold text-white">Jadrien Roi</h1>
         </div>
 
         <ul class="hidden md:flex gap-7 text-white">
-            <li><a href="#about" class="text-md hover:text-blue-400 transition-colors">About</a></li>
-            <li><a href="#techstack" class="text-md hover:text-blue-400 transition-colors">Tech Stack</a></li>
-            <li><a href="#projects" class="text-md hover:text-blue-400 transition-colors">Projects</a></li>
-            <li><a href="#contact" class="text-md hover:text-blue-400 transition-colors">Contacts</a></li>
+            <li>
+                <a href="#about" class="relative text-md transition-all duration-300
+                after:content-[''] after:absolute after:left-0 after:bottom-[-4px] 
+                after:w-0 after:h-[2px] 
+                after:bg-[linear-gradient(45deg,#009DFF,#FF00FF,#009DFF)] 
+                after:transition-all after:duration-300 
+                hover:after:w-full">
+                About
+                </a>
+            </li>
+
+            <li>
+                <a href="#techstack" class="relative text-md transition-all duration-300
+                after:content-[''] after:absolute after:left-0 after:bottom-[-4px] 
+                after:w-0 after:h-[2px] 
+                after:bg-[linear-gradient(45deg,#009DFF,#FF00FF,#009DFF)] 
+                after:transition-all after:duration-300 
+                hover:after:w-full">
+                Tech Stack
+                </a>
+            </li>
+
+            <li>
+                <a href="#projects" class="relative text-md transition-all duration-300
+                after:content-[''] after:absolute after:left-0 after:bottom-[-4px] 
+                after:w-0 after:h-[2px] 
+                after:bg-[linear-gradient(45deg,#009DFF,#FF00FF,#009DFF)] 
+                after:transition-all after:duration-300 
+                hover:after:w-full">
+                Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="#experiences" class="relative text-md transition-all duration-300
+                after:content-[''] after:absolute after:left-0 after:bottom-[-4px] 
+                after:w-0 after:h-[2px] 
+                after:bg-[linear-gradient(45deg,#009DFF,#FF00FF,#009DFF)] 
+                after:transition-all after:duration-300 
+                hover:after:w-full">
+                Experiences
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact" class="relative text-md transition-all duration-300
+                after:content-[''] after:absolute after:left-0 after:bottom-[-4px] 
+                after:w-0 after:h-[2px] 
+                after:bg-[linear-gradient(45deg,#009DFF,#FF00FF,#009DFF)] 
+                after:transition-all after:duration-300 
+                hover:after:w-full">
+                Contacts
+                </a>
+            </li>
         </ul>
 
         <a href="https://github.com/jadriendev" class="hidden lg:inline-block py-3 px-5 rounded-3xl bg-[linear-gradient(45deg,#009DFF,#FF00FF,#009DFF)] bg-[length:200%_200%] bg-left-top hover:bg-right-bottom transition-all duration-700 text-white">Visit Github</a>
@@ -35,11 +84,12 @@
         <li><a href="#about" class="block text-center py-2 hover:text-blue-400 transition-colors">About</a></li>
         <li><a href="#techstack" class="block text-center py-2 hover:text-blue-400 transition-colors">Tech Stack</a></li>
         <li><a href="#projects" class="block text-center py-2 hover:text-blue-400 transition-colors">Projects</a></li>
+        <li><a href="#experiences" class="block text-center py-2 hover:text-blue-400 transition-colors">Experiences</a></li>
         <li><a href="#contact" class="block text-center py-2 hover:text-blue-400 transition-colors">Contacts</a></li>
         <li><a href="https://github.com/jadriendev" class="py-2 px-4 rounded-3xl bg-[linear-gradient(45deg,#009DFF,#FF00FF,#009DFF)] bg-[length:200%_200%] bg-left-top hover:bg-right-bottom transition-all duration-700 text-white">Visit Github</a></li>
     </ul>
 
-    <section class="min-h-[100vh] w-full relative p-[6rem] sm:p-[6rem] md:p-[16rem] px-[6%] sm:px-[8%] md:px-[12%]">
+    <section id="about" class="min-h-[100vh] w-full relative p-[6rem] sm:p-[6rem] md:p-[16rem] px-[6%] sm:px-[8%] md:px-[12%]">
         <div class="flex flex-col md:flex-row items-center justify-center gap-[3rem] md:gap-[10rem]">
             <img class="w-[50vw] sm:w-[30vw] md:w-[20vw] rounded-[50%]" src="images/Screenshot 2026-04-04 142708.png" alt="Jadrien Roi">
 
@@ -61,7 +111,7 @@
         </div>
     </section>
 
-    <section class="min-h-[100vh] w-full relative p-[6rem] sm:p-[6rem] md:p-[16rem] px-[6%] sm:px-[8%] md:px-[12%]">
+    <section id="techstack" class="min-h-[100vh] w-full relative p-[6rem] sm:p-[6rem] md:p-[16rem] px-[6%] sm:px-[8%] md:px-[12%]">
         <h1 class="text-[3rem] md:text-[4rem] text-center font-semibold mb-5">Tech Stack</h1>
         <div class="flex items-center md:flex-row flex-col justify-center gap-[4rem]">
             <div class="grid grid-cols-1 lg:grid-cols-2 sm:grid-cols-2 gap-5">
@@ -107,6 +157,142 @@
             </div>
         </div>
     </section>
+
+    <section id="projects" class="min-h-[100vh] w-full relative p-[6rem] sm:p-[6rem] md:p-[16rem] px-[6%] sm:px-[8%] md:px-[12%]">
+        <h1 class="text-[3rem] md:text-[4rem] text-center font-semibold mb-5">Recent Projects</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-[1.5rem]">
+            <div class="flex h-full items-center justify-center flex-col py-12 px-8 text-center gap-[1.5rem] border-2 border-black rounded-[3rem] cursor-pointer transition duration-300 hover:scale-105 group lg:hover:bg-black">
+                <img class="object-cover w-[70vw] md:w-[30vw] rounded-[1rem]" src="images/tourism.png" alt="">
+                <h3 class="text-xl md:text-2xl font-semibold group-hover:text-white">Philippine Tourism</h3>
+                <p class="text-sm md:text-md group-hover:text-white">A responsive tourism website that showcases popular destinations in the Philippines. Built using HTML, Tailwind CSS, and JavaScript, it features a clean layout, smooth navigation, and interactive elements to enhance user experience.</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-start group gap-3 sm:gap-4">
+                    <a class="border-2 border-black py-1 px-3 rounded-2xl transition-all duration-300 lg:group-hover:border-white lg:group-hover:text-white lg:hover:scale-105" href="https://philippine-tourism-gilt.vercel.app">Live Demo</a>
+                    <a class="border-2 border-black py-1 px-3 rounded-2xl transition-all duration-300 lg:group-hover:border-white lg:group-hover:text-white lg:hover:scale-105" href="https://github.com/jadriendev/philippine-tourism">Github Repo</a>
+                </div>
+            </div>
+
+            <div class="flex h-full items-center justify-center flex-col py-12 px-8 text-center gap-[1.5rem] border-2 border-black rounded-[3rem] cursor-pointer transition duration-300 hover:scale-105 group lg:hover:bg-black">
+                <img class="object-cover w-[70vw] md:w-[30vw] rounded-[1rem]" src="images/academic.png" alt="">
+                <h3 class="text-xl md:text-2xl font-semibold group-hover:text-white">Academic Dash</h3>
+                <p class="text-sm md:text-md group-hover:text-white">An academic dashboard developed as a major subject project, designed to organize and manage school-related data. Built using HTML, Tailwind CSS, and JavaScript, it features a clean interface and interactive components for efficient user experience.</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-3 sm:gap-4">
+                    <a class="border-2 border-black py-1 px-3 rounded-2xl transition-all duration-300 lg:group-hover:border-white lg:group-hover:text-white lg:hover:scale-105" href="https://philippine-tourism-gilt.vercel.app">Live Demo</a>
+                    <a class="border-2 border-black py-1 px-3 rounded-2xl transition-all duration-300 lg:group-hover:border-white lg:group-hover:text-white lg:hover:scale-105" href="https://github.com/jadriendev/philippine-tourism">Github Repo</a>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center flex-col py-12 px-8 text-center gap-[1.5rem] border-2 border-black rounded-[3rem] cursor-pointer transition duration-300 hover:scale-105 group lg:hover:bg-black">
+                <img class="object-cover w-[70vw] md:w-[30vw] rounded-[1rem]" src="images/vip.png" alt="">
+                <h3 class="text-xl md:text-2xl font-semibold group-hover:text-white">THE VIP CLUB</h3>
+                <p class="text-sm md:text-md line-clamp-5 overflow-y-scroll group-hover:text-white">A live business website developed for a client, showcasing exclusive services and brand identity. Built using HTML, Tailwind CSS, and JavaScript, and fully deployed online. This project highlights my ability to work with real clients, handle deployment, and deliver a responsive and user-friendly website.</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-3 sm:gap-4">
+                    <a class="border-2 border-black py-1 px-3 rounded-2xl transition-all duration-300 lg:group-hover:border-white lg:group-hover:text-white lg:hover:scale-105" href="https://philippine-tourism-gilt.vercel.app">Live Demo</a>
+                    <a class="border-2 border-black py-1 px-3 rounded-2xl transition-all duration-300 lg:group-hover:border-white lg:group-hover:text-white lg:hover:scale-105" href="https://github.com/jadriendev/philippine-tourism">Github Repo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiences" class="min-h-[100vh] w-full flex flex-col items-center justify-center py-[6rem] px-[6%] sm:px-[8%] md:px-[12%]">
+        <h1 class="text-[3rem] md:text-[4rem] text-center font-semibold mb-10">Experiences</h1>
+        <div class="flex items-center justify-center">
+            <div class="flex items-center flex-col gap-2 border-2 border-black rounded-[1.5rem] py-10 px-6 transition duration-300 group lg:hover:bg-black cursor-pointer">
+                <i class="fa fa-laptop text-3xl transition duration-300 lg:group-hover:text-white"></i>
+                <h3 class="text-2xl md:text-3xl bg-[linear-gradient(30deg,#009DFF,#FF00FF,#009DFF)] bg-clip-text text-transparent text-center">Freelance Web Developer</h3>
+                <span class="font-semibold transition duration-300 lg:group-hover:text-white">2026 - Present</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="min-h-[100vh] w-full flex items-center justify-center flex-col relative p-[6rem] sm:p-[6rem] md:p-[16rem] px-[6%] sm:px-[8%] md:px-[12%]">
+        <h1 class="text-[3rem] md:text-[4rem] text-center font-semibold mb-10">Contact Me</h1>
+        <form class="flex flex-col justify-center w-full gap-5" method="POST" action="https://formspree.io/f/xvzdqbrv">
+            <div class="relative">
+                <input class="border-2 border-black pl-10 text-lg p-3 rounded-[1rem] w-full" type="text" name="name" id="name" placeholder="Name">
+                <i class="absolute left-2 -top-1 translate-y-1/2 fa fa-user text-2xl"></i>
+            </div>
+
+            <div class="relative">
+                <input class="border-2 border-black pl-10 text-lg p-3 rounded-[1rem] w-full" type="email" name="email" id="email" placeholder="Email">
+                <i class="absolute left-2 -top-1 translate-y-1/2 fa fa-envelope text-2xl"></i>
+            </div>
+
+            <textarea class="border-2 h-[40vw] md:h-[10vw] pt-2 border-black rounded-[1rem] pl-4 w-full" name="message" id="message" placeholder="Enter your Message..."></textarea>
+
+            <div class="flex items-center justify-center">
+                <input class="py-3 w-full max-w-sm border-2 border-black transition-all duration-300 lg:hover:text-white cursor-pointer lg:hover:bg-black text-black rounded-[1rem]" type="submit" value="Submit">
+            </div>
+        </form>
+
+        <div id="toast" class="fixed top-5 right-5 z-[9999] translate-x-[150%] opacity-0 transition-all duration-500 bg-green-500 text-white px-6 py-3 rounded-xl shadow-lg">
+            Submitted Successfully
+        </div>
+    </section>
+
+    <footer class="py-4 flex items-center justify-center flex-col gap-7">
+        <div class="">
+            <ul class="flex flex-wrap justify-center gap-4 text-black sm:gap-7">
+                <li>
+                    <a href="#about" class="relative font-semibold text-md transition-all duration-300
+                    after:content-[''] after:absolute after:left-0 after:bottom-[-4px] 
+                    after:w-0 after:h-[2px] 
+                    after:bg-[linear-gradient(45deg,#009DFF,#FF00FF,#009DFF)] 
+                    after:transition-all after:duration-300 
+                    hover:after:w-full">
+                    About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#techstack" class="relative font-semibold text-md transition-all duration-300
+                    after:content-[''] after:absolute after:left-0 after:bottom-[-4px] 
+                    after:w-0 after:h-[2px] 
+                    after:bg-[linear-gradient(45deg,#009DFF,#FF00FF,#009DFF)] 
+                    after:transition-all after:duration-300 
+                    hover:after:w-full">
+                    Tech Stack
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="relative font-semibold text-md transition-all duration-300
+                    after:content-[''] after:absolute after:left-0 after:bottom-[-4px] 
+                    after:w-0 after:h-[2px] 
+                    after:bg-[linear-gradient(45deg,#009DFF,#FF00FF,#009DFF)] 
+                    after:transition-all after:duration-300 
+                    hover:after:w-full">
+                    Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#experiences" class="relative font-semibold text-md transition-all duration-300
+                    after:content-[''] after:absolute after:left-0 after:bottom-[-4px] 
+                    after:w-0 after:h-[2px] 
+                    after:bg-[linear-gradient(45deg,#009DFF,#FF00FF,#009DFF)] 
+                    after:transition-all after:duration-300 
+                    hover:after:w-full">
+                    Experiences
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="relative font-semibold text-md transition-all duration-300
+                    after:content-[''] after:absolute after:left-0 after:bottom-[-4px] 
+                    after:w-0 after:h-[2px] 
+                    after:bg-[linear-gradient(45deg,#009DFF,#FF00FF,#009DFF)] 
+                    after:transition-all after:duration-300 
+                    hover:after:w-full">
+                    Contacts
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="">
+            <p class="text-gray-500"><span>&copy;</span> All Rights Reserved | Jadrien Roi Aguilar</p>
+        </div>
+    </footer>
 </body>
 <script src="script.js"></script>
 </html>
